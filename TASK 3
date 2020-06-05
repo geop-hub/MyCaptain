@@ -1,0 +1,22 @@
+#a
+list_1 = []
+list_2 = []
+list_2.append(10)
+list_1.append(12)
+print(list_1)
+print(list_2)
+list_1[0] = 1
+list_2[0] = 10
+print(list_1)
+print(list_2)
+
+#b
+Tup = (1,2,3,4,5,6)
+print(Tup[0])
+print(Tup[2:4])
+
+#c
+dict_1 = {'int':10,'float':10.0,'str':'HelloWorld'}
+print(dict_1)
+dict_1.pop('int')
+print(dict_1)
