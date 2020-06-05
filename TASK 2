@@ -1,0 +1,7 @@
+a = input('Enter values').split(',')
+a = list(a)
+b = []
+for i in a:
+    if int(i) >= 0:
+        b.append(i)
+print(b)
