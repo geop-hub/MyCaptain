@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int sum_digits(int a)
+{ if (a==0)
+  return a;
+  return a%10+sum_digits(a/10);
+}
+
+int main()
+{   int a;
+    printf("Enter the value:");
+    scanf("%d",&a);
+    printf("Sum = %d",sum_digits(a));
+    return 0;
+}
