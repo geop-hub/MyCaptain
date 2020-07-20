@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+
+int LCM(int a,int b)
+{static int temp=1;
+ if (temp%a==0 && temp%b==0) return temp;
+ temp++;
+ LCM(a,b);
+ return temp;
+}
+ 
+
+
+
+int main()
+{
+    printf("Enter the values:");
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("LCM: %d",LCM(a,b));
+    return 0;
+}
