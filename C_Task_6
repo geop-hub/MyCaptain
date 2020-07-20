@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int i=2;
+
+const char* prime_check(int a)
+{if (a==1) return "Composite";
+ if (a==2) return "Prime";
+ if (a%i==0) return "Not Prime";
+ if (i*i>a) return "Prime";
+ i++;
+ prime_check(a);
+}
+
+int main()
+{
+    printf("Enter the value:");
+    int a;
+    scanf("%d",&a);
+    printf("Given value is %s",prime_check(a));
+    return 0;
+}
